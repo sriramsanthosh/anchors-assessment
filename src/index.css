@@ -1,0 +1,26 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+button{
+  background-color: transparent;
+  border: none;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+input{
+  background-color: transparent;
+  color: #8C8C8C;
+}
+
+input:focus{
+  box-shadow: 1px 1px 1px 5px;
+}
