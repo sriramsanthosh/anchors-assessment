@@ -3,9 +3,12 @@ import Rocket from "../images/rocket.svg";
 
 function Login() {
     return <div>
-        <header>
-      <nav className = "">
-          <h1 className="nav-left"><sub><img className='app-icon' src={AppIcon} alt="app-icon" /></sub> &nbsp; ANONYMOUS</h1>
+    <header>
+      <nav className = "outer-container">
+            <div className="nav-left inner-container outer-container">
+                <div className="inner-container logo-container"><img className='app-icon logo' src={AppIcon} alt="app-icon" /></div>
+                <h1 className="inner-container"> ANONYMOUS</h1>
+            </div>
       </nav>
     </header>
 

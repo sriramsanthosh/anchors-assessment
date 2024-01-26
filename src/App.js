@@ -1,10 +1,15 @@
 import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from './components/home';
 import SignUp from './components/sign-up';
 import Login from './components/login';
 import Authenticate from './components/authenticate';
 import AuthSuccess from './components/auth-success';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import UserFeed from './components/feed';
+import NewPost from './components/new-post';
+import UserCommented from './components/commented-posts';
+import UserReplied from './components/replied-posts';
+import ViewPost from './components/view-post';
 
 function App() {
     return (
@@ -17,6 +22,11 @@ function App() {
             <Route path="/login" element={<Login />}/>
             <Route path="/authenticate" element={<Authenticate />}/>
             <Route path="/auth-success" element={<AuthSuccess />}/>
+            <Route path="/feed" element={<UserFeed />}/>
+            <Route path="/new-post" element={<NewPost />}/>
+            <Route path="/view-post" element={<ViewPost />}/>
+            <Route path="/commented-posts" element={<UserCommented />}/>
+            <Route path="/replied-posts" element={<UserReplied />}/>
           </Routes>
         </BrowserRouter>
       </div>
